@@ -1,0 +1,60 @@
+name: weather_app
+description: "A new Flutter project."
+publish_to: "none" # Remove this line if you wish to publish to pub.dev
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=3.4.3 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.6
+  # A build system for dart code generation and moculdar compilation
+  build_runner: ^2.4.12
+  # State management
+  flutter_bloc: ^8.1.6
+  # Customize Flutter's default white native splash screen with background color and splash image
+  flutter_native_splash: ^2.4.1
+  # A flutter plugin for adapting screen and font size
+  flutter_screenutil: ^5.9.3
+  # # Code generator (mainly used with cubit & retrofit)
+  freezed: ^2.5.7
+  freezed_annotation: ^2.4.4
+  # Draw SVG files using Flutter
+  flutter_svg: ^2.0.10+1
+  # Dependency injection
+  get_it: ^7.7.0
+  # Automatically generate code for converting to and from json by annotation
+  json_annotation: ^4.9.0
+  json_serializable: ^6.8.0
+  # Networking
+  dio: ^5.6.0
+  pretty_dio_logger: ^1.4.0
+  retrofit: ^4.2.0
+  retrofit_generator: ^8.2.0
+  # Flutter plugin for reading and writing simple key-value pairs. Wraps NSUserDefaults on iOS and SharedPreferences on Android.
+  shared_preferences: ^2.3.2
+  # A Flutter Geolocator plugin which provides access to the location of the device
+  geolocator: ^13.0.1
+  # A package which simplifies the task of updating your Flutter app's launcher icon
+  flutter_launcher_icons: ^0.13.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^3.0.0
+
+flutter:
+  uses-material-design: true
+
+  # assets:
+  #   - images/a_dot_burr.jpeg
+  # fonts:
+  #   - family: Schyler
+  #     fonts:
+  #       - asset: fonts/Schyler-Regular.ttf
+  #         style: italic
