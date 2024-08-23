@@ -41,6 +41,8 @@ dependencies:
   geolocator: ^13.0.1
   # A package which simplifies the task of updating your Flutter app's launcher icon
   flutter_launcher_icons: ^0.13.1
+  # A Flutter package to use fonts from Google
+  google_fonts: ^6.2.1
 
 dev_dependencies:
   flutter_test:

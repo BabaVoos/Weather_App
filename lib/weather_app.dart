@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:weather_app/core/routing/app_router.dart';
+import 'core/routing/app_router.dart';
+import 'core/theming/colors_manager.dart';
 
 import 'core/routing/routes.dart';
 
@@ -17,6 +18,9 @@ class WeatherApp extends StatelessWidget {
       designSize: const Size(360, 690),
       minTextAdapt: true,
       child: MaterialApp(
+        theme: ThemeData(
+          scaffoldBackgroundColor: ColorsManager.blackColor
+        ),
         debugShowCheckedModeBanner: false,
         onGenerateRoute: appRouter.onGenerateRoute,
         initialRoute: Routes.home,
