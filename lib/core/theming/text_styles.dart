@@ -16,4 +16,10 @@ class TextStylesManager {
     fontSize: 20.sp,
     fontWeight: FontWeightHelper.regular,
   );
+
+  static TextStyle font80WhiteRegular = GoogleFonts.russoOne(
+    color: ColorsManager.whiteColor,
+    fontSize: 80.sp,
+    fontWeight: FontWeightHelper.regular,
+  );
 }

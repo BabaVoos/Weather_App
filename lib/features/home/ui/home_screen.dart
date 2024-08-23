@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import '../../../core/helpers/spacing.dart';
+import 'widgets/tempratutre_and_icon.dart';
 import 'widgets/home_screen.dart';
 
 class HomeScreen extends StatelessWidget {
@@ -12,9 +14,11 @@ class HomeScreen extends StatelessWidget {
         child: Container(
           width: double.infinity,
           margin: EdgeInsets.symmetric(horizontal: 16.w, vertical: 16.h),
-          child: const Column(
+          child: Column(
             children: [
-              HomeTopBar(),
+              const HomeTopBar(),
+              verticalSpacing(20),
+              const TempratutreAndIcon(),
             ],
           ),
         ),
