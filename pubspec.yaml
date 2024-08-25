@@ -43,6 +43,10 @@ dependencies:
   flutter_launcher_icons: ^0.13.1
   # A Flutter package to use fonts from Google
   google_fonts: ^6.2.1
+  # Provides a flexible and customizable map widge
+  flutter_map: ^7.0.2
+  # Lightweight library for common latitude and longitude calculation
+  latlong2: ^0.9.1
 
 dev_dependencies:
   flutter_test:
