@@ -3,6 +3,7 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import '../../../core/helpers/spacing.dart';
 import 'widgets/tempratutre_and_icon.dart';
 import 'widgets/home_screen.dart';
+import 'widgets/weather_details.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -19,6 +20,8 @@ class HomeScreen extends StatelessWidget {
               const HomeTopBar(),
               verticalSpacing(20),
               const TempratutreAndIcon(),
+              verticalSpacing(20),
+              const WeatherDetails(),
             ],
           ),
         ),
