@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import '../../../core/helpers/spacing.dart';
+import 'widgets/hourly_forcast_list_view.dart';
 import 'widgets/tempratutre_and_icon.dart';
 import 'widgets/home_screen.dart';
 import 'widgets/weather_days_selection.dart';
@@ -25,6 +26,8 @@ class HomeScreen extends StatelessWidget {
               const WeatherDetails(),
               verticalSpacing(20),
               const WeatherDaysSelection(),
+              verticalSpacing(10),
+              const HourlyForcastListView(),
             ],
           ),
         ),
