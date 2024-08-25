@@ -17,6 +17,12 @@ class TextStylesManager {
     fontWeight: FontWeightHelper.regular,
   );
 
+  static TextStyle font16GreyRegularRussonOne = GoogleFonts.russoOne(
+    color: Colors.grey,
+    fontSize: 16.sp,
+    fontWeight: FontWeightHelper.regular,
+  );
+
   static TextStyle font16GreyRegular = GoogleFonts.chakraPetch(
     color: Colors.grey,
     fontSize: 16.sp,
