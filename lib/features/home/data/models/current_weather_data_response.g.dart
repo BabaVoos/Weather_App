@@ -33,12 +33,12 @@ Map<String, dynamic> _$CurrentWeatherDataResponseToJson(
     };
 
 Weather _$WeatherFromJson(Map<String, dynamic> json) => Weather(
-      name: json['name'] as String?,
+      main: json['main'] as String?,
       description: json['description'] as String?,
     );
 
 Map<String, dynamic> _$WeatherToJson(Weather instance) => <String, dynamic>{
-      'name': instance.name,
+      'main': instance.main,
       'description': instance.description,
     };
 

@@ -17,10 +17,10 @@ class CurrentWeatherDataResponse {
 
 @JsonSerializable()
 class Weather {
-  final String? name;
+  final String? main;
   final String? description;
 
-  Weather({this.name, this.description});
+  Weather({this.main, this.description});
 
   factory Weather.fromJson(Map<String, dynamic> json) =>
       _$WeatherFromJson(json);
