@@ -30,13 +30,11 @@ class HomeScreen extends StatelessWidget {
               return SingleChildScrollView(
                 child: Column(
                   children: [
-                    HomeTopBar(
-                      state: state,
-                    ),
+                    HomeTopBar(state: state),
                     verticalSpacing(20),
-                    TempratutreAndIcon(state: state,),
+                    TempratutreAndIcon(state: state),
                     verticalSpacing(20),
-                    const WeatherDetails(),
+                    WeatherDetails(state: state),
                     verticalSpacing(20),
                     const WeatherDaysSelection(),
                     verticalSpacing(10),

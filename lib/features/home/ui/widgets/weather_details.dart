@@ -1,42 +1,53 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import '../../../../core/theming/colors_manager.dart';
-import 'weather_details_item.dart';
+import '../../../../core/theming/text_styles.dart';
+import '../../logic/cubit/home_state.dart';
+import '../../data/models/current_weather_data_response.dart';
+import 'weather_details_container.dart';
 
 class WeatherDetails extends StatelessWidget {
-  const WeatherDetails({super.key});
+  const WeatherDetails({
+    super.key,
+    required this.state,
+  });
+
+  final HomeState? state;
 
   @override
   Widget build(BuildContext context) {
+    return SizedBox(
+      child: state?.whenOrNull(
+        currentWeatherDataSuccess:
+            (CurrentWeatherDataResponse? currentWeatherDataResponse) =>
+                setupSuccess(
+          currentWeatherDataResponse!,
+        ),
+        currentWeatherDataError: (_) => setupError(),
+        currentWeatherDataloading: () => setupLoading(),
+      ),
+    );
+  }
+
+  Widget setupSuccess(CurrentWeatherDataResponse currentWeatherDataResponse) {
+    return WeatherDetailsContainer(
+      currentWeatherDataResponse: currentWeatherDataResponse,
+    );
+  }
+
+  Widget setupError() {
+    return Text(
+      'There was an error getting the weather data',
+      style: TextStylesManager.font15GreyRegular,
+    );
+  }
+
+  Widget setupLoading() {
     return Container(
-      padding: EdgeInsets.all(16.r),
-      decoration: BoxDecoration(
-        borderRadius: BorderRadius.all(Radius.circular(8.r)),
-        color: ColorsManager.greyColor,
-      ),
-      child: const Row(
-        mainAxisAlignment: MainAxisAlignment.spaceAround,
-        children: [
-          WeatherDetailsItem(
-            image: 'assets/svgs/wind.svg',
-            value: '10',
-            title: 'Wind',
-            unit: 'm/s',
-          ),
-          WeatherDetailsItem(
-            image: 'assets/svgs/humidity.svg',
-            value: '10',
-            title: 'Humidity',
-            unit: '%',
-          ),
-          WeatherDetailsItem(
-            image: 'assets/svgs/rain.svg',
-            value: '100',
-            title: 'Rain',
-            unit: '%',
-          ),
-        ],
-      ),
+      color: ColorsManager.greyColor,
+      width: double.infinity,
+      height: .15.sh,
+      child: const Center(child: CircularProgressIndicator()),
     );
   }
 }
