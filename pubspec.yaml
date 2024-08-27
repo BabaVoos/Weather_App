@@ -49,6 +49,8 @@ dependencies:
   flutter_map: ^7.0.2
   # Lightweight library for common latitude and longitude calculation
   latlong2: ^0.9.1
+  # Date Formatting
+  intl: ^0.19.0
 
 dev_dependencies:
   flutter_test:

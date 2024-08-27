@@ -60,6 +60,6 @@ class LocationHelper {
       position.longitude,
     );
 
-    return placeMarks[0].locality.toString();
+    return placeMarks[0].subAdministrativeArea.toString();
   }
 }

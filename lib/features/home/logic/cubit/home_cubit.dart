@@ -13,13 +13,12 @@ class HomeCubit extends Cubit<HomeState> {
 
   static HomeCubit get(context) => BlocProvider.of<HomeCubit>(context);
 
-  String cityName = 'Cairo';
+  String? cityName;
   Position? currentLocation;
 
   Future<void> getCurrentWeatherData() async {
     emit(const HomeState.currentWeatherDataloading());
-    currentLocation = await LocationHelper.getCurrentLocation();
-    cityName = await LocationHelper.getCurrentCity(currentLocation);
+    await getCurrentLocationAndCity();
     final result = await _currentWeatherDataRepo.getCurrentWeatherData(
       CurrentWeatherDataRequest(
         lat: currentLocation!.latitude,
@@ -36,10 +35,13 @@ class HomeCubit extends Cubit<HomeState> {
         );
       },
       failure: (failure) {
-        emit(
-          HomeState.currentWeatherDataError(failure),
-        );
+        emit(HomeState.currentWeatherDataError(failure));
       },
     );
+  }
+
+  Future<void> getCurrentLocationAndCity() async {
+    currentLocation = await LocationHelper.getCurrentLocation();
+    cityName = await LocationHelper.getCurrentCity(currentLocation);
   }
 }
