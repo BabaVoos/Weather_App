@@ -1,6 +1,5 @@
-// ignore_for_file: dead_code, unused_element
-
 import 'package:flutter/material.dart';
+import 'package:intl/intl.dart';
 
 extension Navigation on BuildContext {
   Future<dynamic> pushNamed(String routeName, {Object? arguments}) {
@@ -35,4 +34,16 @@ extension StringExtension on String? {
 
 extension ListExtension<T> on List<T>? {
   bool isNullOrEmpty() => this == null || this!.isEmpty;
+}
+
+extension DateTimeFormatting on DateTime {
+  String toFormattedDate() {
+    return DateFormat('d MMMM, EEEE').format(this);
+  }
+}
+
+extension TemperatureConversion on double {
+  int toCelsius() {
+    return (this - 273.15).round();
+  }
 }
