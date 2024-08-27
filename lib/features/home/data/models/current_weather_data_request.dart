@@ -8,7 +8,11 @@ class CurrentWeatherDataRequest {
   @JsonKey(name: 'appid')
   final String appId;
 
-  CurrentWeatherDataRequest(this.lat, this.lon, this.appId);
+  CurrentWeatherDataRequest({
+    required this.lat,
+    required this.lon,
+    required this.appId,
+  });
 
   Map<String, dynamic> toJson() => _$CurrentWeatherDataRequestToJson(this);
 }

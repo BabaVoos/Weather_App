@@ -39,6 +39,8 @@ dependencies:
   shared_preferences: ^2.3.2
   # A Flutter Geolocator plugin which provides access to the location of the device
   geolocator: ^13.0.1
+  # A Flutter Geocoding plugin which provides easy geocoding and reverse-geocoding features.
+  geocoding: ^3.0.0
   # A package which simplifies the task of updating your Flutter app's launcher icon
   flutter_launcher_icons: ^0.13.1
   # A Flutter package to use fonts from Google

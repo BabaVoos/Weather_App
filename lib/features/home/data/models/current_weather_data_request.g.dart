@@ -9,9 +9,9 @@ part of 'current_weather_data_request.dart';
 CurrentWeatherDataRequest _$CurrentWeatherDataRequestFromJson(
         Map<String, dynamic> json) =>
     CurrentWeatherDataRequest(
-      (json['lat'] as num).toDouble(),
-      (json['lon'] as num).toDouble(),
-      json['appid'] as String,
+      lat: (json['lat'] as num).toDouble(),
+      lon: (json['lon'] as num).toDouble(),
+      appId: json['appid'] as String,
     );
 
 Map<String, dynamic> _$CurrentWeatherDataRequestToJson(
