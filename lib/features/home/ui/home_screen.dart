@@ -40,7 +40,7 @@ class HomeScreen extends StatelessWidget {
                     verticalSpacing(10),
                     const HourlyForcastListView(),
                     verticalSpacing(15),
-                    const MyLocationOnMap(),
+                    MyLocationOnMap(state: state,),
                   ],
                 ),
               );
