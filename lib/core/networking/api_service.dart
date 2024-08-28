@@ -1,6 +1,7 @@
 import 'package:dio/dio.dart';
 import 'package:retrofit/error_logger.dart';
 import 'package:retrofit/http.dart';
+import 'package:weather_app/features/home/data/models/five_days_forecast_response.dart';
 import '../../features/home/data/models/current_weather_data_response.dart';
 import '../../features/home/data/models/current_weather_data_request.dart';
 import 'api_constants.dart';
@@ -16,7 +17,7 @@ abstract class ApiService {
   );
 
   @GET(ApiConstants.forecastEp)
-  Future<CurrentWeatherDataResponse> getFiveDayForecastData(
+  Future<FiveDaysForecastResponse> getFiveDayForecastData(
     @Queries() CurrentWeatherDataRequest request,
   );
 }

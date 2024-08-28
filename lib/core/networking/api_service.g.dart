@@ -59,14 +59,14 @@ class _ApiService implements ApiService {
   }
 
   @override
-  Future<CurrentWeatherDataResponse> getFiveDayForecastData(
+  Future<FiveDaysForecastResponse> getFiveDayForecastData(
       CurrentWeatherDataRequest request) async {
     final _extra = <String, dynamic>{};
     final queryParameters = <String, dynamic>{};
     queryParameters.addAll(request.toJson());
     final _headers = <String, dynamic>{};
     const Map<String, dynamic>? _data = null;
-    final _options = _setStreamType<CurrentWeatherDataResponse>(Options(
+    final _options = _setStreamType<FiveDaysForecastResponse>(Options(
       method: 'GET',
       headers: _headers,
       extra: _extra,
@@ -83,9 +83,9 @@ class _ApiService implements ApiService {
           baseUrl,
         )));
     final _result = await _dio.fetch<Map<String, dynamic>>(_options);
-    late CurrentWeatherDataResponse _value;
+    late FiveDaysForecastResponse _value;
     try {
-      _value = CurrentWeatherDataResponse.fromJson(_result.data!);
+      _value = FiveDaysForecastResponse.fromJson(_result.data!);
     } on Object catch (e, s) {
       errorLogger?.logError(e, s, _options);
       rethrow;
