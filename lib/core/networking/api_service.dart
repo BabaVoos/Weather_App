@@ -14,4 +14,9 @@ abstract class ApiService {
   Future<CurrentWeatherDataResponse> getWeatherData(
     @Queries() CurrentWeatherDataRequest request,
   );
+
+  @GET(ApiConstants.forecastEp)
+  Future<CurrentWeatherDataResponse> getFiveDayForecastData(
+    @Queries() CurrentWeatherDataRequest request,
+  );
 }
