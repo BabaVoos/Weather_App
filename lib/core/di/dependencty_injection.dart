@@ -1,5 +1,6 @@
 import 'package:dio/dio.dart';
 import 'package:get_it/get_it.dart';
+import '../../features/home/data/repos/five_days_forecast_data_repo.dart';
 import '../networking/api_service.dart';
 import '../../features/home/logic/cubit/home_cubit.dart';
 import '../../features/home/data/repos/current_weather_data_repo.dart';
@@ -15,5 +16,9 @@ Future<void> setupGetIt() async {
   // Home
   getIt.registerLazySingleton<CurrentWeatherDataRepo>(
       () => CurrentWeatherDataRepo(getIt()));
-  getIt.registerFactory<HomeCubit>(() => HomeCubit(getIt()));
+
+  getIt.registerLazySingleton<FiveDaysForecastDataRepo>(
+      () => FiveDaysForecastDataRepo(getIt()));
+
+  getIt.registerFactory<HomeCubit>(() => HomeCubit(getIt(), getIt()));
 }
