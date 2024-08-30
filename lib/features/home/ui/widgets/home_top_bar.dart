@@ -24,7 +24,6 @@ class HomeTopBar extends StatelessWidget {
             CityName(
               state: state,
             ),
-
             buildDate(),
           ],
         ),

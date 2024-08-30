@@ -18,7 +18,7 @@ class FiveDaysForecastResponse {
 @JsonSerializable()
 class FivdeDaysForecastListItem {
   @JsonKey(name: 'dt')
-  final DateTime? dateTime;
+  final int? dateTime;
   final Main? main;
   @JsonKey(name: 'dt_txt')
   final String? date;

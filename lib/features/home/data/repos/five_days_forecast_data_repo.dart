@@ -1,5 +1,4 @@
-import 'package:weather_app/features/home/data/models/five_days_forecast_response.dart';
-
+import '../models/five_days_forecast_response.dart';
 import '../../../../core/networking/api_error_handler.dart';
 import '../../../../core/networking/api_result.dart';
 import '../../../../core/networking/api_service.dart';

@@ -19,6 +19,12 @@ class HomeCubit extends Cubit<HomeState> {
   String? cityName;
   Position? currentLocation;
 
+  /// Asynchronously fetches the current weather and a 5-day forecast.
+  Future<void> getWeatherData() async {
+    await getCurrentWeatherData();
+    await getFiveDaysForecastData();
+  }
+
   Future<void> getCurrentWeatherData() async {
     emit(const HomeState.currentWeatherDataloading());
     await getCurrentLocationAndCity();

@@ -24,8 +24,7 @@ Map<String, dynamic> _$FiveDaysForecastResponseToJson(
 FivdeDaysForecastListItem _$FivdeDaysForecastListItemFromJson(
         Map<String, dynamic> json) =>
     FivdeDaysForecastListItem(
-      dateTime:
-          json['dt'] == null ? null : DateTime.parse(json['dt'] as String),
+      dateTime: (json['dt'] as num?)?.toInt(),
       main: json['main'] == null
           ? null
           : Main.fromJson(json['main'] as Map<String, dynamic>),
@@ -35,7 +34,7 @@ FivdeDaysForecastListItem _$FivdeDaysForecastListItemFromJson(
 Map<String, dynamic> _$FivdeDaysForecastListItemToJson(
         FivdeDaysForecastListItem instance) =>
     <String, dynamic>{
-      'dt': instance.dateTime?.toIso8601String(),
+      'dt': instance.dateTime,
       'main': instance.main,
       'dt_txt': instance.date,
     };
