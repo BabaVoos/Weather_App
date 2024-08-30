@@ -4,7 +4,7 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import '../../../core/helpers/spacing.dart';
 import '../logic/cubit/home_cubit.dart';
 import '../logic/cubit/home_state.dart';
-import 'widgets/hourly_forcast_list_view.dart';
+import 'widgets/forcast_bloc_builder.dart';
 import 'widgets/my_location_on_map.dart';
 import 'widgets/tempratutre_and_icon.dart';
 import 'widgets/home_top_bar.dart';
@@ -38,7 +38,7 @@ class HomeScreen extends StatelessWidget {
                     verticalSpacing(20),
                     const WeatherDaysSelection(),
                     verticalSpacing(10),
-                    HourlyForcastListView(state: state),
+                    ForcastBlocBuilder(state: state),
                     verticalSpacing(15),
                     MyLocationOnMap(state: state),
                   ],

@@ -40,6 +40,7 @@ class MyLocationOnMap extends StatelessWidget {
   FlutterMap _setupSuccess(HomeCubit cubit) {
     return FlutterMap(
       options: MapOptions(
+        backgroundColor: Colors.transparent,
         initialCenter: LatLng(
             cubit.currentLocation!.latitude, cubit.currentLocation!.longitude),
         initialZoom: 10.0,
