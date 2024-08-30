@@ -25,6 +25,12 @@ mixin _$HomeState<T> {
         currentWeatherDataSuccess,
     required TResult Function(ApiErrorModel apiErrorModel)
         currentWeatherDataError,
+    required TResult Function() fiveDaysForecastDataLoading,
+    required TResult Function(
+            List<FivdeDaysForecastListItem>? fiveDaysForecastList)
+        fiveDaysForecastDataSuccess,
+    required TResult Function(ApiErrorModel apiErrorModel)
+        fiveDaysForecastDataError,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -34,6 +40,10 @@ mixin _$HomeState<T> {
     TResult? Function(CurrentWeatherDataResponse? currentWeatherDataResponse)?
         currentWeatherDataSuccess,
     TResult? Function(ApiErrorModel apiErrorModel)? currentWeatherDataError,
+    TResult? Function()? fiveDaysForecastDataLoading,
+    TResult? Function(List<FivdeDaysForecastListItem>? fiveDaysForecastList)?
+        fiveDaysForecastDataSuccess,
+    TResult? Function(ApiErrorModel apiErrorModel)? fiveDaysForecastDataError,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -43,6 +53,10 @@ mixin _$HomeState<T> {
     TResult Function(CurrentWeatherDataResponse? currentWeatherDataResponse)?
         currentWeatherDataSuccess,
     TResult Function(ApiErrorModel apiErrorModel)? currentWeatherDataError,
+    TResult Function()? fiveDaysForecastDataLoading,
+    TResult Function(List<FivdeDaysForecastListItem>? fiveDaysForecastList)?
+        fiveDaysForecastDataSuccess,
+    TResult Function(ApiErrorModel apiErrorModel)? fiveDaysForecastDataError,
     required TResult orElse(),
   }) =>
       throw _privateConstructorUsedError;
@@ -55,6 +69,12 @@ mixin _$HomeState<T> {
         currentWeatherDataSuccess,
     required TResult Function(CurrentWeatherDataError<T> value)
         currentWeatherDataError,
+    required TResult Function(FiveDaysForecastDataLoading<T> value)
+        fiveDaysForecastDataLoading,
+    required TResult Function(FiveDaysForecastDataSuccess<T> value)
+        fiveDaysForecastDataSuccess,
+    required TResult Function(FiveDaysForecastDataError<T> value)
+        fiveDaysForecastDataError,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -66,6 +86,12 @@ mixin _$HomeState<T> {
         currentWeatherDataSuccess,
     TResult? Function(CurrentWeatherDataError<T> value)?
         currentWeatherDataError,
+    TResult? Function(FiveDaysForecastDataLoading<T> value)?
+        fiveDaysForecastDataLoading,
+    TResult? Function(FiveDaysForecastDataSuccess<T> value)?
+        fiveDaysForecastDataSuccess,
+    TResult? Function(FiveDaysForecastDataError<T> value)?
+        fiveDaysForecastDataError,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -76,6 +102,12 @@ mixin _$HomeState<T> {
     TResult Function(CurrentWeatherDataSuccess<T> value)?
         currentWeatherDataSuccess,
     TResult Function(CurrentWeatherDataError<T> value)? currentWeatherDataError,
+    TResult Function(FiveDaysForecastDataLoading<T> value)?
+        fiveDaysForecastDataLoading,
+    TResult Function(FiveDaysForecastDataSuccess<T> value)?
+        fiveDaysForecastDataSuccess,
+    TResult Function(FiveDaysForecastDataError<T> value)?
+        fiveDaysForecastDataError,
     required TResult orElse(),
   }) =>
       throw _privateConstructorUsedError;
@@ -150,6 +182,12 @@ class _$InitialImpl<T> implements _Initial<T> {
         currentWeatherDataSuccess,
     required TResult Function(ApiErrorModel apiErrorModel)
         currentWeatherDataError,
+    required TResult Function() fiveDaysForecastDataLoading,
+    required TResult Function(
+            List<FivdeDaysForecastListItem>? fiveDaysForecastList)
+        fiveDaysForecastDataSuccess,
+    required TResult Function(ApiErrorModel apiErrorModel)
+        fiveDaysForecastDataError,
   }) {
     return initial();
   }
@@ -162,6 +200,10 @@ class _$InitialImpl<T> implements _Initial<T> {
     TResult? Function(CurrentWeatherDataResponse? currentWeatherDataResponse)?
         currentWeatherDataSuccess,
     TResult? Function(ApiErrorModel apiErrorModel)? currentWeatherDataError,
+    TResult? Function()? fiveDaysForecastDataLoading,
+    TResult? Function(List<FivdeDaysForecastListItem>? fiveDaysForecastList)?
+        fiveDaysForecastDataSuccess,
+    TResult? Function(ApiErrorModel apiErrorModel)? fiveDaysForecastDataError,
   }) {
     return initial?.call();
   }
@@ -174,6 +216,10 @@ class _$InitialImpl<T> implements _Initial<T> {
     TResult Function(CurrentWeatherDataResponse? currentWeatherDataResponse)?
         currentWeatherDataSuccess,
     TResult Function(ApiErrorModel apiErrorModel)? currentWeatherDataError,
+    TResult Function()? fiveDaysForecastDataLoading,
+    TResult Function(List<FivdeDaysForecastListItem>? fiveDaysForecastList)?
+        fiveDaysForecastDataSuccess,
+    TResult Function(ApiErrorModel apiErrorModel)? fiveDaysForecastDataError,
     required TResult orElse(),
   }) {
     if (initial != null) {
@@ -192,6 +238,12 @@ class _$InitialImpl<T> implements _Initial<T> {
         currentWeatherDataSuccess,
     required TResult Function(CurrentWeatherDataError<T> value)
         currentWeatherDataError,
+    required TResult Function(FiveDaysForecastDataLoading<T> value)
+        fiveDaysForecastDataLoading,
+    required TResult Function(FiveDaysForecastDataSuccess<T> value)
+        fiveDaysForecastDataSuccess,
+    required TResult Function(FiveDaysForecastDataError<T> value)
+        fiveDaysForecastDataError,
   }) {
     return initial(this);
   }
@@ -206,6 +258,12 @@ class _$InitialImpl<T> implements _Initial<T> {
         currentWeatherDataSuccess,
     TResult? Function(CurrentWeatherDataError<T> value)?
         currentWeatherDataError,
+    TResult? Function(FiveDaysForecastDataLoading<T> value)?
+        fiveDaysForecastDataLoading,
+    TResult? Function(FiveDaysForecastDataSuccess<T> value)?
+        fiveDaysForecastDataSuccess,
+    TResult? Function(FiveDaysForecastDataError<T> value)?
+        fiveDaysForecastDataError,
   }) {
     return initial?.call(this);
   }
@@ -219,6 +277,12 @@ class _$InitialImpl<T> implements _Initial<T> {
     TResult Function(CurrentWeatherDataSuccess<T> value)?
         currentWeatherDataSuccess,
     TResult Function(CurrentWeatherDataError<T> value)? currentWeatherDataError,
+    TResult Function(FiveDaysForecastDataLoading<T> value)?
+        fiveDaysForecastDataLoading,
+    TResult Function(FiveDaysForecastDataSuccess<T> value)?
+        fiveDaysForecastDataSuccess,
+    TResult Function(FiveDaysForecastDataError<T> value)?
+        fiveDaysForecastDataError,
     required TResult orElse(),
   }) {
     if (initial != null) {
@@ -284,6 +348,12 @@ class _$CurrentWeatherDataloadingImpl<T>
         currentWeatherDataSuccess,
     required TResult Function(ApiErrorModel apiErrorModel)
         currentWeatherDataError,
+    required TResult Function() fiveDaysForecastDataLoading,
+    required TResult Function(
+            List<FivdeDaysForecastListItem>? fiveDaysForecastList)
+        fiveDaysForecastDataSuccess,
+    required TResult Function(ApiErrorModel apiErrorModel)
+        fiveDaysForecastDataError,
   }) {
     return currentWeatherDataloading();
   }
@@ -296,6 +366,10 @@ class _$CurrentWeatherDataloadingImpl<T>
     TResult? Function(CurrentWeatherDataResponse? currentWeatherDataResponse)?
         currentWeatherDataSuccess,
     TResult? Function(ApiErrorModel apiErrorModel)? currentWeatherDataError,
+    TResult? Function()? fiveDaysForecastDataLoading,
+    TResult? Function(List<FivdeDaysForecastListItem>? fiveDaysForecastList)?
+        fiveDaysForecastDataSuccess,
+    TResult? Function(ApiErrorModel apiErrorModel)? fiveDaysForecastDataError,
   }) {
     return currentWeatherDataloading?.call();
   }
@@ -308,6 +382,10 @@ class _$CurrentWeatherDataloadingImpl<T>
     TResult Function(CurrentWeatherDataResponse? currentWeatherDataResponse)?
         currentWeatherDataSuccess,
     TResult Function(ApiErrorModel apiErrorModel)? currentWeatherDataError,
+    TResult Function()? fiveDaysForecastDataLoading,
+    TResult Function(List<FivdeDaysForecastListItem>? fiveDaysForecastList)?
+        fiveDaysForecastDataSuccess,
+    TResult Function(ApiErrorModel apiErrorModel)? fiveDaysForecastDataError,
     required TResult orElse(),
   }) {
     if (currentWeatherDataloading != null) {
@@ -326,6 +404,12 @@ class _$CurrentWeatherDataloadingImpl<T>
         currentWeatherDataSuccess,
     required TResult Function(CurrentWeatherDataError<T> value)
         currentWeatherDataError,
+    required TResult Function(FiveDaysForecastDataLoading<T> value)
+        fiveDaysForecastDataLoading,
+    required TResult Function(FiveDaysForecastDataSuccess<T> value)
+        fiveDaysForecastDataSuccess,
+    required TResult Function(FiveDaysForecastDataError<T> value)
+        fiveDaysForecastDataError,
   }) {
     return currentWeatherDataloading(this);
   }
@@ -340,6 +424,12 @@ class _$CurrentWeatherDataloadingImpl<T>
         currentWeatherDataSuccess,
     TResult? Function(CurrentWeatherDataError<T> value)?
         currentWeatherDataError,
+    TResult? Function(FiveDaysForecastDataLoading<T> value)?
+        fiveDaysForecastDataLoading,
+    TResult? Function(FiveDaysForecastDataSuccess<T> value)?
+        fiveDaysForecastDataSuccess,
+    TResult? Function(FiveDaysForecastDataError<T> value)?
+        fiveDaysForecastDataError,
   }) {
     return currentWeatherDataloading?.call(this);
   }
@@ -353,6 +443,12 @@ class _$CurrentWeatherDataloadingImpl<T>
     TResult Function(CurrentWeatherDataSuccess<T> value)?
         currentWeatherDataSuccess,
     TResult Function(CurrentWeatherDataError<T> value)? currentWeatherDataError,
+    TResult Function(FiveDaysForecastDataLoading<T> value)?
+        fiveDaysForecastDataLoading,
+    TResult Function(FiveDaysForecastDataSuccess<T> value)?
+        fiveDaysForecastDataSuccess,
+    TResult Function(FiveDaysForecastDataError<T> value)?
+        fiveDaysForecastDataError,
     required TResult orElse(),
   }) {
     if (currentWeatherDataloading != null) {
@@ -450,6 +546,12 @@ class _$CurrentWeatherDataSuccessImpl<T>
         currentWeatherDataSuccess,
     required TResult Function(ApiErrorModel apiErrorModel)
         currentWeatherDataError,
+    required TResult Function() fiveDaysForecastDataLoading,
+    required TResult Function(
+            List<FivdeDaysForecastListItem>? fiveDaysForecastList)
+        fiveDaysForecastDataSuccess,
+    required TResult Function(ApiErrorModel apiErrorModel)
+        fiveDaysForecastDataError,
   }) {
     return currentWeatherDataSuccess(currentWeatherDataResponse);
   }
@@ -462,6 +564,10 @@ class _$CurrentWeatherDataSuccessImpl<T>
     TResult? Function(CurrentWeatherDataResponse? currentWeatherDataResponse)?
         currentWeatherDataSuccess,
     TResult? Function(ApiErrorModel apiErrorModel)? currentWeatherDataError,
+    TResult? Function()? fiveDaysForecastDataLoading,
+    TResult? Function(List<FivdeDaysForecastListItem>? fiveDaysForecastList)?
+        fiveDaysForecastDataSuccess,
+    TResult? Function(ApiErrorModel apiErrorModel)? fiveDaysForecastDataError,
   }) {
     return currentWeatherDataSuccess?.call(currentWeatherDataResponse);
   }
@@ -474,6 +580,10 @@ class _$CurrentWeatherDataSuccessImpl<T>
     TResult Function(CurrentWeatherDataResponse? currentWeatherDataResponse)?
         currentWeatherDataSuccess,
     TResult Function(ApiErrorModel apiErrorModel)? currentWeatherDataError,
+    TResult Function()? fiveDaysForecastDataLoading,
+    TResult Function(List<FivdeDaysForecastListItem>? fiveDaysForecastList)?
+        fiveDaysForecastDataSuccess,
+    TResult Function(ApiErrorModel apiErrorModel)? fiveDaysForecastDataError,
     required TResult orElse(),
   }) {
     if (currentWeatherDataSuccess != null) {
@@ -492,6 +602,12 @@ class _$CurrentWeatherDataSuccessImpl<T>
         currentWeatherDataSuccess,
     required TResult Function(CurrentWeatherDataError<T> value)
         currentWeatherDataError,
+    required TResult Function(FiveDaysForecastDataLoading<T> value)
+        fiveDaysForecastDataLoading,
+    required TResult Function(FiveDaysForecastDataSuccess<T> value)
+        fiveDaysForecastDataSuccess,
+    required TResult Function(FiveDaysForecastDataError<T> value)
+        fiveDaysForecastDataError,
   }) {
     return currentWeatherDataSuccess(this);
   }
@@ -506,6 +622,12 @@ class _$CurrentWeatherDataSuccessImpl<T>
         currentWeatherDataSuccess,
     TResult? Function(CurrentWeatherDataError<T> value)?
         currentWeatherDataError,
+    TResult? Function(FiveDaysForecastDataLoading<T> value)?
+        fiveDaysForecastDataLoading,
+    TResult? Function(FiveDaysForecastDataSuccess<T> value)?
+        fiveDaysForecastDataSuccess,
+    TResult? Function(FiveDaysForecastDataError<T> value)?
+        fiveDaysForecastDataError,
   }) {
     return currentWeatherDataSuccess?.call(this);
   }
@@ -519,6 +641,12 @@ class _$CurrentWeatherDataSuccessImpl<T>
     TResult Function(CurrentWeatherDataSuccess<T> value)?
         currentWeatherDataSuccess,
     TResult Function(CurrentWeatherDataError<T> value)? currentWeatherDataError,
+    TResult Function(FiveDaysForecastDataLoading<T> value)?
+        fiveDaysForecastDataLoading,
+    TResult Function(FiveDaysForecastDataSuccess<T> value)?
+        fiveDaysForecastDataSuccess,
+    TResult Function(FiveDaysForecastDataError<T> value)?
+        fiveDaysForecastDataError,
     required TResult orElse(),
   }) {
     if (currentWeatherDataSuccess != null) {
@@ -622,6 +750,12 @@ class _$CurrentWeatherDataErrorImpl<T> implements CurrentWeatherDataError<T> {
         currentWeatherDataSuccess,
     required TResult Function(ApiErrorModel apiErrorModel)
         currentWeatherDataError,
+    required TResult Function() fiveDaysForecastDataLoading,
+    required TResult Function(
+            List<FivdeDaysForecastListItem>? fiveDaysForecastList)
+        fiveDaysForecastDataSuccess,
+    required TResult Function(ApiErrorModel apiErrorModel)
+        fiveDaysForecastDataError,
   }) {
     return currentWeatherDataError(apiErrorModel);
   }
@@ -634,6 +768,10 @@ class _$CurrentWeatherDataErrorImpl<T> implements CurrentWeatherDataError<T> {
     TResult? Function(CurrentWeatherDataResponse? currentWeatherDataResponse)?
         currentWeatherDataSuccess,
     TResult? Function(ApiErrorModel apiErrorModel)? currentWeatherDataError,
+    TResult? Function()? fiveDaysForecastDataLoading,
+    TResult? Function(List<FivdeDaysForecastListItem>? fiveDaysForecastList)?
+        fiveDaysForecastDataSuccess,
+    TResult? Function(ApiErrorModel apiErrorModel)? fiveDaysForecastDataError,
   }) {
     return currentWeatherDataError?.call(apiErrorModel);
   }
@@ -646,6 +784,10 @@ class _$CurrentWeatherDataErrorImpl<T> implements CurrentWeatherDataError<T> {
     TResult Function(CurrentWeatherDataResponse? currentWeatherDataResponse)?
         currentWeatherDataSuccess,
     TResult Function(ApiErrorModel apiErrorModel)? currentWeatherDataError,
+    TResult Function()? fiveDaysForecastDataLoading,
+    TResult Function(List<FivdeDaysForecastListItem>? fiveDaysForecastList)?
+        fiveDaysForecastDataSuccess,
+    TResult Function(ApiErrorModel apiErrorModel)? fiveDaysForecastDataError,
     required TResult orElse(),
   }) {
     if (currentWeatherDataError != null) {
@@ -664,6 +806,12 @@ class _$CurrentWeatherDataErrorImpl<T> implements CurrentWeatherDataError<T> {
         currentWeatherDataSuccess,
     required TResult Function(CurrentWeatherDataError<T> value)
         currentWeatherDataError,
+    required TResult Function(FiveDaysForecastDataLoading<T> value)
+        fiveDaysForecastDataLoading,
+    required TResult Function(FiveDaysForecastDataSuccess<T> value)
+        fiveDaysForecastDataSuccess,
+    required TResult Function(FiveDaysForecastDataError<T> value)
+        fiveDaysForecastDataError,
   }) {
     return currentWeatherDataError(this);
   }
@@ -678,6 +826,12 @@ class _$CurrentWeatherDataErrorImpl<T> implements CurrentWeatherDataError<T> {
         currentWeatherDataSuccess,
     TResult? Function(CurrentWeatherDataError<T> value)?
         currentWeatherDataError,
+    TResult? Function(FiveDaysForecastDataLoading<T> value)?
+        fiveDaysForecastDataLoading,
+    TResult? Function(FiveDaysForecastDataSuccess<T> value)?
+        fiveDaysForecastDataSuccess,
+    TResult? Function(FiveDaysForecastDataError<T> value)?
+        fiveDaysForecastDataError,
   }) {
     return currentWeatherDataError?.call(this);
   }
@@ -691,6 +845,12 @@ class _$CurrentWeatherDataErrorImpl<T> implements CurrentWeatherDataError<T> {
     TResult Function(CurrentWeatherDataSuccess<T> value)?
         currentWeatherDataSuccess,
     TResult Function(CurrentWeatherDataError<T> value)? currentWeatherDataError,
+    TResult Function(FiveDaysForecastDataLoading<T> value)?
+        fiveDaysForecastDataLoading,
+    TResult Function(FiveDaysForecastDataSuccess<T> value)?
+        fiveDaysForecastDataSuccess,
+    TResult Function(FiveDaysForecastDataError<T> value)?
+        fiveDaysForecastDataError,
     required TResult orElse(),
   }) {
     if (currentWeatherDataError != null) {
@@ -710,5 +870,596 @@ abstract class CurrentWeatherDataError<T> implements HomeState<T> {
   /// with the given fields replaced by the non-null parameter values.
   @JsonKey(includeFromJson: false, includeToJson: false)
   _$$CurrentWeatherDataErrorImplCopyWith<T, _$CurrentWeatherDataErrorImpl<T>>
+      get copyWith => throw _privateConstructorUsedError;
+}
+
+/// @nodoc
+abstract class _$$FiveDaysForecastDataLoadingImplCopyWith<T, $Res> {
+  factory _$$FiveDaysForecastDataLoadingImplCopyWith(
+          _$FiveDaysForecastDataLoadingImpl<T> value,
+          $Res Function(_$FiveDaysForecastDataLoadingImpl<T>) then) =
+      __$$FiveDaysForecastDataLoadingImplCopyWithImpl<T, $Res>;
+}
+
+/// @nodoc
+class __$$FiveDaysForecastDataLoadingImplCopyWithImpl<T, $Res>
+    extends _$HomeStateCopyWithImpl<T, $Res,
+        _$FiveDaysForecastDataLoadingImpl<T>>
+    implements _$$FiveDaysForecastDataLoadingImplCopyWith<T, $Res> {
+  __$$FiveDaysForecastDataLoadingImplCopyWithImpl(
+      _$FiveDaysForecastDataLoadingImpl<T> _value,
+      $Res Function(_$FiveDaysForecastDataLoadingImpl<T>) _then)
+      : super(_value, _then);
+
+  /// Create a copy of HomeState
+  /// with the given fields replaced by the non-null parameter values.
+}
+
+/// @nodoc
+
+class _$FiveDaysForecastDataLoadingImpl<T>
+    implements FiveDaysForecastDataLoading<T> {
+  const _$FiveDaysForecastDataLoadingImpl();
+
+  @override
+  String toString() {
+    return 'HomeState<$T>.fiveDaysForecastDataLoading()';
+  }
+
+  @override
+  bool operator ==(Object other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType &&
+            other is _$FiveDaysForecastDataLoadingImpl<T>);
+  }
+
+  @override
+  int get hashCode => runtimeType.hashCode;
+
+  @override
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>({
+    required TResult Function() initial,
+    required TResult Function() currentWeatherDataloading,
+    required TResult Function(
+            CurrentWeatherDataResponse? currentWeatherDataResponse)
+        currentWeatherDataSuccess,
+    required TResult Function(ApiErrorModel apiErrorModel)
+        currentWeatherDataError,
+    required TResult Function() fiveDaysForecastDataLoading,
+    required TResult Function(
+            List<FivdeDaysForecastListItem>? fiveDaysForecastList)
+        fiveDaysForecastDataSuccess,
+    required TResult Function(ApiErrorModel apiErrorModel)
+        fiveDaysForecastDataError,
+  }) {
+    return fiveDaysForecastDataLoading();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function()? initial,
+    TResult? Function()? currentWeatherDataloading,
+    TResult? Function(CurrentWeatherDataResponse? currentWeatherDataResponse)?
+        currentWeatherDataSuccess,
+    TResult? Function(ApiErrorModel apiErrorModel)? currentWeatherDataError,
+    TResult? Function()? fiveDaysForecastDataLoading,
+    TResult? Function(List<FivdeDaysForecastListItem>? fiveDaysForecastList)?
+        fiveDaysForecastDataSuccess,
+    TResult? Function(ApiErrorModel apiErrorModel)? fiveDaysForecastDataError,
+  }) {
+    return fiveDaysForecastDataLoading?.call();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function()? initial,
+    TResult Function()? currentWeatherDataloading,
+    TResult Function(CurrentWeatherDataResponse? currentWeatherDataResponse)?
+        currentWeatherDataSuccess,
+    TResult Function(ApiErrorModel apiErrorModel)? currentWeatherDataError,
+    TResult Function()? fiveDaysForecastDataLoading,
+    TResult Function(List<FivdeDaysForecastListItem>? fiveDaysForecastList)?
+        fiveDaysForecastDataSuccess,
+    TResult Function(ApiErrorModel apiErrorModel)? fiveDaysForecastDataError,
+    required TResult orElse(),
+  }) {
+    if (fiveDaysForecastDataLoading != null) {
+      return fiveDaysForecastDataLoading();
+    }
+    return orElse();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>({
+    required TResult Function(_Initial<T> value) initial,
+    required TResult Function(CurrentWeatherDataloading<T> value)
+        currentWeatherDataloading,
+    required TResult Function(CurrentWeatherDataSuccess<T> value)
+        currentWeatherDataSuccess,
+    required TResult Function(CurrentWeatherDataError<T> value)
+        currentWeatherDataError,
+    required TResult Function(FiveDaysForecastDataLoading<T> value)
+        fiveDaysForecastDataLoading,
+    required TResult Function(FiveDaysForecastDataSuccess<T> value)
+        fiveDaysForecastDataSuccess,
+    required TResult Function(FiveDaysForecastDataError<T> value)
+        fiveDaysForecastDataError,
+  }) {
+    return fiveDaysForecastDataLoading(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(_Initial<T> value)? initial,
+    TResult? Function(CurrentWeatherDataloading<T> value)?
+        currentWeatherDataloading,
+    TResult? Function(CurrentWeatherDataSuccess<T> value)?
+        currentWeatherDataSuccess,
+    TResult? Function(CurrentWeatherDataError<T> value)?
+        currentWeatherDataError,
+    TResult? Function(FiveDaysForecastDataLoading<T> value)?
+        fiveDaysForecastDataLoading,
+    TResult? Function(FiveDaysForecastDataSuccess<T> value)?
+        fiveDaysForecastDataSuccess,
+    TResult? Function(FiveDaysForecastDataError<T> value)?
+        fiveDaysForecastDataError,
+  }) {
+    return fiveDaysForecastDataLoading?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(_Initial<T> value)? initial,
+    TResult Function(CurrentWeatherDataloading<T> value)?
+        currentWeatherDataloading,
+    TResult Function(CurrentWeatherDataSuccess<T> value)?
+        currentWeatherDataSuccess,
+    TResult Function(CurrentWeatherDataError<T> value)? currentWeatherDataError,
+    TResult Function(FiveDaysForecastDataLoading<T> value)?
+        fiveDaysForecastDataLoading,
+    TResult Function(FiveDaysForecastDataSuccess<T> value)?
+        fiveDaysForecastDataSuccess,
+    TResult Function(FiveDaysForecastDataError<T> value)?
+        fiveDaysForecastDataError,
+    required TResult orElse(),
+  }) {
+    if (fiveDaysForecastDataLoading != null) {
+      return fiveDaysForecastDataLoading(this);
+    }
+    return orElse();
+  }
+}
+
+abstract class FiveDaysForecastDataLoading<T> implements HomeState<T> {
+  const factory FiveDaysForecastDataLoading() =
+      _$FiveDaysForecastDataLoadingImpl<T>;
+}
+
+/// @nodoc
+abstract class _$$FiveDaysForecastDataSuccessImplCopyWith<T, $Res> {
+  factory _$$FiveDaysForecastDataSuccessImplCopyWith(
+          _$FiveDaysForecastDataSuccessImpl<T> value,
+          $Res Function(_$FiveDaysForecastDataSuccessImpl<T>) then) =
+      __$$FiveDaysForecastDataSuccessImplCopyWithImpl<T, $Res>;
+  @useResult
+  $Res call({List<FivdeDaysForecastListItem>? fiveDaysForecastList});
+}
+
+/// @nodoc
+class __$$FiveDaysForecastDataSuccessImplCopyWithImpl<T, $Res>
+    extends _$HomeStateCopyWithImpl<T, $Res,
+        _$FiveDaysForecastDataSuccessImpl<T>>
+    implements _$$FiveDaysForecastDataSuccessImplCopyWith<T, $Res> {
+  __$$FiveDaysForecastDataSuccessImplCopyWithImpl(
+      _$FiveDaysForecastDataSuccessImpl<T> _value,
+      $Res Function(_$FiveDaysForecastDataSuccessImpl<T>) _then)
+      : super(_value, _then);
+
+  /// Create a copy of HomeState
+  /// with the given fields replaced by the non-null parameter values.
+  @pragma('vm:prefer-inline')
+  @override
+  $Res call({
+    Object? fiveDaysForecastList = freezed,
+  }) {
+    return _then(_$FiveDaysForecastDataSuccessImpl<T>(
+      fiveDaysForecastList: freezed == fiveDaysForecastList
+          ? _value._fiveDaysForecastList
+          : fiveDaysForecastList // ignore: cast_nullable_to_non_nullable
+              as List<FivdeDaysForecastListItem>?,
+    ));
+  }
+}
+
+/// @nodoc
+
+class _$FiveDaysForecastDataSuccessImpl<T>
+    implements FiveDaysForecastDataSuccess<T> {
+  const _$FiveDaysForecastDataSuccessImpl(
+      {final List<FivdeDaysForecastListItem>? fiveDaysForecastList})
+      : _fiveDaysForecastList = fiveDaysForecastList;
+
+  final List<FivdeDaysForecastListItem>? _fiveDaysForecastList;
+  @override
+  List<FivdeDaysForecastListItem>? get fiveDaysForecastList {
+    final value = _fiveDaysForecastList;
+    if (value == null) return null;
+    if (_fiveDaysForecastList is EqualUnmodifiableListView)
+      return _fiveDaysForecastList;
+    // ignore: implicit_dynamic_type
+    return EqualUnmodifiableListView(value);
+  }
+
+  @override
+  String toString() {
+    return 'HomeState<$T>.fiveDaysForecastDataSuccess(fiveDaysForecastList: $fiveDaysForecastList)';
+  }
+
+  @override
+  bool operator ==(Object other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType &&
+            other is _$FiveDaysForecastDataSuccessImpl<T> &&
+            const DeepCollectionEquality()
+                .equals(other._fiveDaysForecastList, _fiveDaysForecastList));
+  }
+
+  @override
+  int get hashCode => Object.hash(
+      runtimeType, const DeepCollectionEquality().hash(_fiveDaysForecastList));
+
+  /// Create a copy of HomeState
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
+  @override
+  @pragma('vm:prefer-inline')
+  _$$FiveDaysForecastDataSuccessImplCopyWith<T,
+          _$FiveDaysForecastDataSuccessImpl<T>>
+      get copyWith => __$$FiveDaysForecastDataSuccessImplCopyWithImpl<T,
+          _$FiveDaysForecastDataSuccessImpl<T>>(this, _$identity);
+
+  @override
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>({
+    required TResult Function() initial,
+    required TResult Function() currentWeatherDataloading,
+    required TResult Function(
+            CurrentWeatherDataResponse? currentWeatherDataResponse)
+        currentWeatherDataSuccess,
+    required TResult Function(ApiErrorModel apiErrorModel)
+        currentWeatherDataError,
+    required TResult Function() fiveDaysForecastDataLoading,
+    required TResult Function(
+            List<FivdeDaysForecastListItem>? fiveDaysForecastList)
+        fiveDaysForecastDataSuccess,
+    required TResult Function(ApiErrorModel apiErrorModel)
+        fiveDaysForecastDataError,
+  }) {
+    return fiveDaysForecastDataSuccess(fiveDaysForecastList);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function()? initial,
+    TResult? Function()? currentWeatherDataloading,
+    TResult? Function(CurrentWeatherDataResponse? currentWeatherDataResponse)?
+        currentWeatherDataSuccess,
+    TResult? Function(ApiErrorModel apiErrorModel)? currentWeatherDataError,
+    TResult? Function()? fiveDaysForecastDataLoading,
+    TResult? Function(List<FivdeDaysForecastListItem>? fiveDaysForecastList)?
+        fiveDaysForecastDataSuccess,
+    TResult? Function(ApiErrorModel apiErrorModel)? fiveDaysForecastDataError,
+  }) {
+    return fiveDaysForecastDataSuccess?.call(fiveDaysForecastList);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function()? initial,
+    TResult Function()? currentWeatherDataloading,
+    TResult Function(CurrentWeatherDataResponse? currentWeatherDataResponse)?
+        currentWeatherDataSuccess,
+    TResult Function(ApiErrorModel apiErrorModel)? currentWeatherDataError,
+    TResult Function()? fiveDaysForecastDataLoading,
+    TResult Function(List<FivdeDaysForecastListItem>? fiveDaysForecastList)?
+        fiveDaysForecastDataSuccess,
+    TResult Function(ApiErrorModel apiErrorModel)? fiveDaysForecastDataError,
+    required TResult orElse(),
+  }) {
+    if (fiveDaysForecastDataSuccess != null) {
+      return fiveDaysForecastDataSuccess(fiveDaysForecastList);
+    }
+    return orElse();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>({
+    required TResult Function(_Initial<T> value) initial,
+    required TResult Function(CurrentWeatherDataloading<T> value)
+        currentWeatherDataloading,
+    required TResult Function(CurrentWeatherDataSuccess<T> value)
+        currentWeatherDataSuccess,
+    required TResult Function(CurrentWeatherDataError<T> value)
+        currentWeatherDataError,
+    required TResult Function(FiveDaysForecastDataLoading<T> value)
+        fiveDaysForecastDataLoading,
+    required TResult Function(FiveDaysForecastDataSuccess<T> value)
+        fiveDaysForecastDataSuccess,
+    required TResult Function(FiveDaysForecastDataError<T> value)
+        fiveDaysForecastDataError,
+  }) {
+    return fiveDaysForecastDataSuccess(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(_Initial<T> value)? initial,
+    TResult? Function(CurrentWeatherDataloading<T> value)?
+        currentWeatherDataloading,
+    TResult? Function(CurrentWeatherDataSuccess<T> value)?
+        currentWeatherDataSuccess,
+    TResult? Function(CurrentWeatherDataError<T> value)?
+        currentWeatherDataError,
+    TResult? Function(FiveDaysForecastDataLoading<T> value)?
+        fiveDaysForecastDataLoading,
+    TResult? Function(FiveDaysForecastDataSuccess<T> value)?
+        fiveDaysForecastDataSuccess,
+    TResult? Function(FiveDaysForecastDataError<T> value)?
+        fiveDaysForecastDataError,
+  }) {
+    return fiveDaysForecastDataSuccess?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(_Initial<T> value)? initial,
+    TResult Function(CurrentWeatherDataloading<T> value)?
+        currentWeatherDataloading,
+    TResult Function(CurrentWeatherDataSuccess<T> value)?
+        currentWeatherDataSuccess,
+    TResult Function(CurrentWeatherDataError<T> value)? currentWeatherDataError,
+    TResult Function(FiveDaysForecastDataLoading<T> value)?
+        fiveDaysForecastDataLoading,
+    TResult Function(FiveDaysForecastDataSuccess<T> value)?
+        fiveDaysForecastDataSuccess,
+    TResult Function(FiveDaysForecastDataError<T> value)?
+        fiveDaysForecastDataError,
+    required TResult orElse(),
+  }) {
+    if (fiveDaysForecastDataSuccess != null) {
+      return fiveDaysForecastDataSuccess(this);
+    }
+    return orElse();
+  }
+}
+
+abstract class FiveDaysForecastDataSuccess<T> implements HomeState<T> {
+  const factory FiveDaysForecastDataSuccess(
+          {final List<FivdeDaysForecastListItem>? fiveDaysForecastList}) =
+      _$FiveDaysForecastDataSuccessImpl<T>;
+
+  List<FivdeDaysForecastListItem>? get fiveDaysForecastList;
+
+  /// Create a copy of HomeState
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
+  _$$FiveDaysForecastDataSuccessImplCopyWith<T,
+          _$FiveDaysForecastDataSuccessImpl<T>>
+      get copyWith => throw _privateConstructorUsedError;
+}
+
+/// @nodoc
+abstract class _$$FiveDaysForecastDataErrorImplCopyWith<T, $Res> {
+  factory _$$FiveDaysForecastDataErrorImplCopyWith(
+          _$FiveDaysForecastDataErrorImpl<T> value,
+          $Res Function(_$FiveDaysForecastDataErrorImpl<T>) then) =
+      __$$FiveDaysForecastDataErrorImplCopyWithImpl<T, $Res>;
+  @useResult
+  $Res call({ApiErrorModel apiErrorModel});
+}
+
+/// @nodoc
+class __$$FiveDaysForecastDataErrorImplCopyWithImpl<T, $Res>
+    extends _$HomeStateCopyWithImpl<T, $Res, _$FiveDaysForecastDataErrorImpl<T>>
+    implements _$$FiveDaysForecastDataErrorImplCopyWith<T, $Res> {
+  __$$FiveDaysForecastDataErrorImplCopyWithImpl(
+      _$FiveDaysForecastDataErrorImpl<T> _value,
+      $Res Function(_$FiveDaysForecastDataErrorImpl<T>) _then)
+      : super(_value, _then);
+
+  /// Create a copy of HomeState
+  /// with the given fields replaced by the non-null parameter values.
+  @pragma('vm:prefer-inline')
+  @override
+  $Res call({
+    Object? apiErrorModel = null,
+  }) {
+    return _then(_$FiveDaysForecastDataErrorImpl<T>(
+      null == apiErrorModel
+          ? _value.apiErrorModel
+          : apiErrorModel // ignore: cast_nullable_to_non_nullable
+              as ApiErrorModel,
+    ));
+  }
+}
+
+/// @nodoc
+
+class _$FiveDaysForecastDataErrorImpl<T>
+    implements FiveDaysForecastDataError<T> {
+  const _$FiveDaysForecastDataErrorImpl(this.apiErrorModel);
+
+  @override
+  final ApiErrorModel apiErrorModel;
+
+  @override
+  String toString() {
+    return 'HomeState<$T>.fiveDaysForecastDataError(apiErrorModel: $apiErrorModel)';
+  }
+
+  @override
+  bool operator ==(Object other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType &&
+            other is _$FiveDaysForecastDataErrorImpl<T> &&
+            (identical(other.apiErrorModel, apiErrorModel) ||
+                other.apiErrorModel == apiErrorModel));
+  }
+
+  @override
+  int get hashCode => Object.hash(runtimeType, apiErrorModel);
+
+  /// Create a copy of HomeState
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
+  @override
+  @pragma('vm:prefer-inline')
+  _$$FiveDaysForecastDataErrorImplCopyWith<T,
+          _$FiveDaysForecastDataErrorImpl<T>>
+      get copyWith => __$$FiveDaysForecastDataErrorImplCopyWithImpl<T,
+          _$FiveDaysForecastDataErrorImpl<T>>(this, _$identity);
+
+  @override
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>({
+    required TResult Function() initial,
+    required TResult Function() currentWeatherDataloading,
+    required TResult Function(
+            CurrentWeatherDataResponse? currentWeatherDataResponse)
+        currentWeatherDataSuccess,
+    required TResult Function(ApiErrorModel apiErrorModel)
+        currentWeatherDataError,
+    required TResult Function() fiveDaysForecastDataLoading,
+    required TResult Function(
+            List<FivdeDaysForecastListItem>? fiveDaysForecastList)
+        fiveDaysForecastDataSuccess,
+    required TResult Function(ApiErrorModel apiErrorModel)
+        fiveDaysForecastDataError,
+  }) {
+    return fiveDaysForecastDataError(apiErrorModel);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function()? initial,
+    TResult? Function()? currentWeatherDataloading,
+    TResult? Function(CurrentWeatherDataResponse? currentWeatherDataResponse)?
+        currentWeatherDataSuccess,
+    TResult? Function(ApiErrorModel apiErrorModel)? currentWeatherDataError,
+    TResult? Function()? fiveDaysForecastDataLoading,
+    TResult? Function(List<FivdeDaysForecastListItem>? fiveDaysForecastList)?
+        fiveDaysForecastDataSuccess,
+    TResult? Function(ApiErrorModel apiErrorModel)? fiveDaysForecastDataError,
+  }) {
+    return fiveDaysForecastDataError?.call(apiErrorModel);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function()? initial,
+    TResult Function()? currentWeatherDataloading,
+    TResult Function(CurrentWeatherDataResponse? currentWeatherDataResponse)?
+        currentWeatherDataSuccess,
+    TResult Function(ApiErrorModel apiErrorModel)? currentWeatherDataError,
+    TResult Function()? fiveDaysForecastDataLoading,
+    TResult Function(List<FivdeDaysForecastListItem>? fiveDaysForecastList)?
+        fiveDaysForecastDataSuccess,
+    TResult Function(ApiErrorModel apiErrorModel)? fiveDaysForecastDataError,
+    required TResult orElse(),
+  }) {
+    if (fiveDaysForecastDataError != null) {
+      return fiveDaysForecastDataError(apiErrorModel);
+    }
+    return orElse();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>({
+    required TResult Function(_Initial<T> value) initial,
+    required TResult Function(CurrentWeatherDataloading<T> value)
+        currentWeatherDataloading,
+    required TResult Function(CurrentWeatherDataSuccess<T> value)
+        currentWeatherDataSuccess,
+    required TResult Function(CurrentWeatherDataError<T> value)
+        currentWeatherDataError,
+    required TResult Function(FiveDaysForecastDataLoading<T> value)
+        fiveDaysForecastDataLoading,
+    required TResult Function(FiveDaysForecastDataSuccess<T> value)
+        fiveDaysForecastDataSuccess,
+    required TResult Function(FiveDaysForecastDataError<T> value)
+        fiveDaysForecastDataError,
+  }) {
+    return fiveDaysForecastDataError(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(_Initial<T> value)? initial,
+    TResult? Function(CurrentWeatherDataloading<T> value)?
+        currentWeatherDataloading,
+    TResult? Function(CurrentWeatherDataSuccess<T> value)?
+        currentWeatherDataSuccess,
+    TResult? Function(CurrentWeatherDataError<T> value)?
+        currentWeatherDataError,
+    TResult? Function(FiveDaysForecastDataLoading<T> value)?
+        fiveDaysForecastDataLoading,
+    TResult? Function(FiveDaysForecastDataSuccess<T> value)?
+        fiveDaysForecastDataSuccess,
+    TResult? Function(FiveDaysForecastDataError<T> value)?
+        fiveDaysForecastDataError,
+  }) {
+    return fiveDaysForecastDataError?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(_Initial<T> value)? initial,
+    TResult Function(CurrentWeatherDataloading<T> value)?
+        currentWeatherDataloading,
+    TResult Function(CurrentWeatherDataSuccess<T> value)?
+        currentWeatherDataSuccess,
+    TResult Function(CurrentWeatherDataError<T> value)? currentWeatherDataError,
+    TResult Function(FiveDaysForecastDataLoading<T> value)?
+        fiveDaysForecastDataLoading,
+    TResult Function(FiveDaysForecastDataSuccess<T> value)?
+        fiveDaysForecastDataSuccess,
+    TResult Function(FiveDaysForecastDataError<T> value)?
+        fiveDaysForecastDataError,
+    required TResult orElse(),
+  }) {
+    if (fiveDaysForecastDataError != null) {
+      return fiveDaysForecastDataError(this);
+    }
+    return orElse();
+  }
+}
+
+abstract class FiveDaysForecastDataError<T> implements HomeState<T> {
+  const factory FiveDaysForecastDataError(final ApiErrorModel apiErrorModel) =
+      _$FiveDaysForecastDataErrorImpl<T>;
+
+  ApiErrorModel get apiErrorModel;
+
+  /// Create a copy of HomeState
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
+  _$$FiveDaysForecastDataErrorImplCopyWith<T,
+          _$FiveDaysForecastDataErrorImpl<T>>
       get copyWith => throw _privateConstructorUsedError;
 }
