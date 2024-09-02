@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import '../../logic/cubit/home_state.dart';
-import '../../../../core/helpers/extinsions.dart';
-import '../../../../core/theming/colors_manager.dart';
-import '../../../../core/theming/text_styles.dart';
+import '../../../logic/cubit/home_state.dart';
+import '../../../../../core/helpers/extinsions.dart';
+import '../../../../../core/theming/colors_manager.dart';
+import '../../../../../core/theming/text_styles.dart';
 import 'city_name.dart';
 
 class HomeTopBar extends StatelessWidget {
