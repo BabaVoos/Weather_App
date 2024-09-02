@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import '../../../../core/theming/colors_manager.dart';
-import '../../data/models/current_weather_data_response.dart';
+import '../../../../../core/theming/colors_manager.dart';
+import '../../../data/models/current_weather_data_response.dart';
 import 'weather_details_item.dart';
 
 class WeatherDetailsContainer extends StatelessWidget {

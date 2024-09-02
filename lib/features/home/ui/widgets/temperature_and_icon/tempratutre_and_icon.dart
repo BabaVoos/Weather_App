@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import '../../../../core/theming/colors_manager.dart';
-import '../../logic/cubit/home_state.dart';
-import '../../../../core/networking/api_error_model.dart';
-import '../../../../core/theming/text_styles.dart';
-import '../../data/models/current_weather_data_response.dart';
+import '../../../../../core/theming/colors_manager.dart';
+import '../../../logic/cubit/home_state.dart';
+import '../../../../../core/networking/api_error_model.dart';
+import '../../../../../core/theming/text_styles.dart';
+import '../../../data/models/current_weather_data_response.dart';
 import 'temprature_description.dart';
 import 'temprature_icon.dart';
 

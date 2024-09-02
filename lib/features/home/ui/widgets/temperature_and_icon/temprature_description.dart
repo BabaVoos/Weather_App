@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import '../../../../core/helpers/extinsions.dart';
-import '../../../../core/theming/text_styles.dart';
+import '../../../../../core/helpers/extinsions.dart';
+import '../../../../../core/theming/text_styles.dart';
 
 class TempratureDescription extends StatelessWidget {
   const TempratureDescription({

@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import '../../data/models/five_days_forecast_response.dart';
-import '../../../../core/helpers/spacing.dart';
-import '../../../../core/theming/colors_manager.dart';
-import '../../../../core/theming/text_styles.dart';
-import '../../../../core/helpers/extinsions.dart';
+import '../../../data/models/five_days_forecast_response.dart';
+import '../../../../../core/helpers/spacing.dart';
+import '../../../../../core/theming/colors_manager.dart';
+import '../../../../../core/theming/text_styles.dart';
+import '../../../../../core/helpers/extinsions.dart';
 
 class HourlyForcastItem extends StatelessWidget {
   const HourlyForcastItem({

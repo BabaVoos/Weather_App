@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import '../../logic/cubit/home_cubit.dart';
-import '../../data/models/five_days_forecast_response.dart';
-import '../../logic/cubit/home_state.dart';
-import '../../../../core/theming/text_styles.dart';
+import '../../../logic/cubit/home_cubit.dart';
+import '../../../data/models/five_days_forecast_response.dart';
+import '../../../logic/cubit/home_state.dart';
+import '../../../../../core/theming/text_styles.dart';
 import 'forecast_list_view.dart';
 
-class ForcastBlocBuilder extends StatelessWidget {
-  const ForcastBlocBuilder({super.key, required this.state});
+class ForecastBlocBuilder extends StatelessWidget {
+  const ForecastBlocBuilder({super.key, required this.state});
 
   final HomeState? state;
 

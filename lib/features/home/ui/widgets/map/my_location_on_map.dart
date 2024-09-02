@@ -2,9 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:flutter_map/flutter_map.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:latlong2/latlong.dart';
-import '../../logic/cubit/home_cubit.dart';
-import '../../logic/cubit/home_state.dart';
-import '../../../../core/theming/text_styles.dart';
+import '../../../logic/cubit/home_cubit.dart';
+import '../../../logic/cubit/home_state.dart';
+import '../../../../../core/theming/text_styles.dart';
 
 class MyLocationOnMap extends StatelessWidget {
   const MyLocationOnMap({super.key, required this.state});

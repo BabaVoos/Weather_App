@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import '../../../../core/helpers/extinsions.dart';
-import '../../../../core/theming/text_styles.dart';
-import '../../logic/cubit/home_cubit.dart';
+import '../../../../../core/helpers/extinsions.dart';
+import '../../../../../core/theming/text_styles.dart';
+import '../../../logic/cubit/home_cubit.dart';
 import 'weather_days_selection_selected_item.dart';
 
 class WeatherDaysSelection extends StatefulWidget {

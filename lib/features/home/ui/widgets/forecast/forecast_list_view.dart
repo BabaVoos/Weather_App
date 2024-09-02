@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import '../../../../core/helpers/spacing.dart';
-import '../../data/models/current_weather_data_response.dart';
+import '../../../../../core/helpers/spacing.dart';
+import '../../../data/models/current_weather_data_response.dart';
 import 'hourly_forcast_item.dart';
-import '../../data/models/five_days_forecast_response.dart';
+import '../../../data/models/five_days_forecast_response.dart';
 
 class ForecastListView extends StatelessWidget {
   const ForecastListView({
