@@ -37,8 +37,12 @@ extension ListExtension<T> on List<T>? {
 }
 
 extension DateTimeFormatting on DateTime {
-  String toFormattedDate() {
+  String toFormattedDateDME() {
     return DateFormat('d MMMM, EEEE').format(this);
+  }
+
+  String toFormattedTimeDM() {
+    return DateFormat('d MMM').format(this);
   }
 }
 

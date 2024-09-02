@@ -49,7 +49,7 @@ class HomeTopBar extends StatelessWidget {
 
   Text buildDate() {
     return Text(
-      DateTime.now().toFormattedDate(),
+      DateTime.now().toFormattedDateDME(),
       style: TextStylesManager.font15GreyRegular,
     );
   }

@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:weather_app/core/theming/text_styles.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+import '../../../../core/helpers/spacing.dart';
+import '../../../../core/theming/colors_manager.dart';
+import '../../../../core/theming/text_styles.dart';
 
 class WeatherDaysSelectionSelectedItem extends StatelessWidget {
   final String title;
@@ -12,9 +15,25 @@ class WeatherDaysSelectionSelectedItem extends StatelessWidget {
   Widget build(BuildContext context) {
     return Column(
       children: [
-        Text(
-          title,
-          style: TextStylesManager.font16WhiteRegular,
+        Row(
+          children: [
+            Container(
+              color: ColorsManager.whiteColor,
+              width: 1.w,
+              height: 20.h,
+            ),
+            horizontalSpacing(5),
+            Text(
+              title,
+              style: TextStylesManager.font16WhiteRegular,
+            ),
+            horizontalSpacing(5),
+            Container(
+              color: ColorsManager.whiteColor,
+              width: 1.w,
+              height: 20.h,
+            ),
+          ],
         ),
         Text(
           '•',
